@@ -13,23 +13,26 @@ def print_how_many_years_to_80():
 
 #与えられたパラメーターが「偶数」か「奇数」かを出力
 def print_odd_or_even(target):
-    a = 2
-    if(a % 2 = 0){
+    if target % 2 == 1:
         print('奇数')
-    }else{
+    else:
         print('偶数')
-    }
+
     pass
 
-#randomモジュールを使用して0-50の整数を生成し、25が出るまで「hoge」と出力
+#randomモジュールを使用して0-50の整数を生成し、25が出るまで「ほげ」と出力
 def print_hoge():
     #randint(0, 50)で、0-50の範囲から整数乱数を生成する
     from random import randint
-
+    while randint(0, 50) != 25:
+        print('ほげ')
     pass
 
 #100から1000までの偶数のみを表示してください
 def print_even_from_100_to_1000():
+    for num in range(100, 1000):
+        if num % 2 == 0:
+            print(num)
     pass
 
 if __name__ == '__main__':
