@@ -36,7 +36,7 @@ def judge_rank(score):
 def factorial(num):
     b = 1
     for n in range(num):
-        b += n
+        b *= n
     print(b)
     pass
 
