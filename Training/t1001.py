@@ -43,7 +43,7 @@ def factorial(num):
 
 #与えられた数値の2の累乗を返す。再帰使用禁止。便利な演算子使用禁止。
 def power_of_two(num):
-    print (num ** 2)
+    print (2 ** num)
     pass
 
 
