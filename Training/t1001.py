@@ -43,7 +43,11 @@ def factorial(num):
 
 #与えられた数値の2の累乗を返す。再帰使用禁止。便利な演算子使用禁止。
 def power_of_two(num):
-    print (2 ** num)
+    sum = 1
+    while num > 0:
+        sum *= 2
+        num -= 1
+    return sum
     pass
 
 
@@ -52,5 +56,5 @@ if __name__ == '__main__':
     tax_include(4321)
     judge_rank(91)
     factorial(100)
-    power_of_two(3)
+    print(power_of_two(3))
     pass
